@@ -1,0 +1,25 @@
+.splide {
+  margin-bottom: 20px;
+}
+.splide__track {
+  height: 100% !important;
+}
+.splide img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.splide__arrow {
+  background-color: transparent;
+  color: var(--dark) !important;
+}
+.splide__arrow:hover {
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+  color: var(--dark) !important;
+}

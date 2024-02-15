@@ -1,0 +1,45 @@
+#Filtration {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-right: 0.4px solid #a8a8a8;
+}
+#Filtration > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 8px;
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    padding: 0px;
+
+    list-style: none;
+    & li {
+      text-align: start;
+      width: auto;
+      padding: 8px;
+      border-radius: 8px;
+      transition: all 0.4s ease;
+    }
+    & li:hover {
+      cursor: pointer;
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
+.filterBtn {
+  width: 48px;
+  height: 48px;
+}
+.filterBtn > svg {
+  fill: #000;
+  width: 24px;
+  height: 24px;
+}

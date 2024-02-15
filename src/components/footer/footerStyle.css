@@ -1,0 +1,27 @@
+.footer {
+  z-index: 999;
+  /* position: relative;
+  left: 0;
+  bottom: 0; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 0;
+  gap: 20px;
+  background-color: var(--blue);
+  > a {
+    color: var(--light);
+    text-decoration: none;
+    line-height: 22.4px;
+    > svg {
+      fill: var(--light);
+      width: 24px;
+      height: 24px;
+    }
+  }
+  > a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--dark);
+  }
+}
