@@ -149,7 +149,6 @@ export default function ProductDetails() {
   } else if (isError) {
     return <Error error={error} />;
   } else if (isSuccess && product) {
-    console.log(product);
     const productDescription = product.description.split("\n");
     return (
       <div id="productDetails">
@@ -231,7 +230,6 @@ export default function ProductDetails() {
             <h3>Specifications</h3>
             <Table hover variant="light" responsive>
               <tbody>
-                {console.log(product)}
                 {product.specifications
                   ? Object.keys(product.specifications).map((key, index) => {
                       return (

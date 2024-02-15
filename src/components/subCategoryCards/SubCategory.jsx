@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import "./subCategory.css";
 import { useNavigate } from "react-router-dom";
 export default function SubCategory({ item }) {
-  console.log({ item });
   const navigate = useNavigate();
   return (
     <div

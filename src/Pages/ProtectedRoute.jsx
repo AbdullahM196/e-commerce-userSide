@@ -44,6 +44,5 @@ export default function ProtectRoute() {
         text: error.data || error.error,
       });
     }
-    // console.log(error);
   }
 }

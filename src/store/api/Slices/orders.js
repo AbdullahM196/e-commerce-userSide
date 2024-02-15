@@ -18,7 +18,6 @@ export const orderSlice = apiSlice.injectEndpoints({
         return responseData;
       },
       providesTags: (result, error, arg) => {
-        console.log(result);
         if (!error && result !== undefined) {
           return [
             { type: "order", id: "LIST" },
@@ -32,7 +31,6 @@ export const orderSlice = apiSlice.injectEndpoints({
     getMostSoled: builder.query({
       query: () => "/order/mostSold",
       transformResponse: (res) => {
-        console.log(res);
         const products = res.map((item) => item.productDetail);
         return products;
       },
@@ -43,7 +41,6 @@ export const orderSlice = apiSlice.injectEndpoints({
         method: "PATCH",
       }),
       transformResponse: (responseData) => {
-        console.log(responseData);
         return responseData;
       },
       invalidatesTags: (result, error, arg) => {

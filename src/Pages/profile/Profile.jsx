@@ -18,10 +18,9 @@ import useWidth from "../../components/GetWidthHook/useWidth";
 export default function Profile() {
   const MySwal = withReactContent(Swal);
   const screenWidth = useWidth();
-  console.log(screenWidth);
+
   const [cancelOrder] = useCancelOrderMutation();
   async function handleCancelOrder(id) {
-    console.log(id);
     try {
       await cancelOrder(id).unwrap();
       MySwal.fire({

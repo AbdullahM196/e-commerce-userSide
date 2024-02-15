@@ -9,15 +9,12 @@ export const favoriteSlice = apiSlice.injectEndpoints({
     getFavorites: builder.query({
       query: () => `/favorite/getFavorites`,
       transformResponse: (res) => {
-        // console.log(res);
         return res?.products
           ? favAdapter.setAll(initialState, res.products)
           : initialState;
       },
       providesTags: (result, error, args) => {
-        // console.log(result);
         if (!error && result !== undefined) {
-          // console.log(result);
           return [
             { type: "favorite", id: "LIST" },
             ...(result.ids

@@ -10,7 +10,6 @@ export default function SubCategory() {
   const { id } = useParams();
   const [priceRange, setPriceRange] = useState("");
   const [specifications, setSpecifications] = useState("");
-  // console.log(id);
   const { data, isLoading, isSuccess, isError, error } = useGetSearchQuery(
     `subCategory=${id}&specifications=${specifications}&price=${priceRange}`
   );

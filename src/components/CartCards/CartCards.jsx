@@ -52,16 +52,17 @@ export default function CartCards({
         </p>
         <div className="spics">
           <ul>
-            {Object.keys(specifications).map((item) => {
-              return (
-                <li key={item}>
-                  {item} :{" "}
-                  {screenWidth < 500
-                    ? specifications[item].substring(0, 15) + "..."
-                    : specifications[item]}
-                </li>
-              );
-            })}
+            {specifications &&
+              Object.keys(specifications).map((item) => {
+                return (
+                  <li key={item}>
+                    {item} :{" "}
+                    {screenWidth < 500
+                      ? specifications[item].substring(0, 15) + "..."
+                      : specifications[item]}
+                  </li>
+                );
+              })}
           </ul>
         </div>
         <div className="bottom">

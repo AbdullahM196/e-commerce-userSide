@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./secondNav.css";
 export default function SecondNav() {
-  // const navigate=useNavigate()
   return (
     <div id="secondNav">
       <nav>

@@ -10,7 +10,6 @@ export const offers = apiSlice.injectEndpoints({
       query: () => `/mainPage/getAllOffers`,
       providesTags: ["offers"],
       transformResponse: (responseData) => {
-        console.log(responseData);
         return offerAdapter.setAll(initialState, responseData);
       },
     }),

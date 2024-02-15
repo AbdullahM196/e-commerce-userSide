@@ -12,7 +12,6 @@ export const userCartSlice = apiSlice.injectEndpoints({
         return cartAdapter.setOne(initialState, responseData);
       },
       providesTags: (result, error, arg) => {
-        // console.log(result);
         if (!error && result !== undefined) {
           return [
             { type: "Cart", id: "LIST" },

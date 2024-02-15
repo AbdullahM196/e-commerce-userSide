@@ -19,7 +19,6 @@ export default function NavBar() {
   const screenWidth = useWidth();
 
   function handleSearch() {
-    console.log(searchText);
     navigate(`/search/${searchText}`);
   }
   const [show, setShow] = useState(false);

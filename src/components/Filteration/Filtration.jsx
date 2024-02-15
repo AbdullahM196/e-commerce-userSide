@@ -47,9 +47,7 @@ export default function Filtration({
       searchValue = searchValue.join("");
     } else {
       searchValue = value;
-      console.log(searchValue);
     }
-    console.log(searchValue);
     setSpecifications(`${name}==${searchValue}`);
   }
   const screenWidth = useWidth();
