@@ -24,6 +24,7 @@ export default function Register() {
           password: values.password,
         }).unwrap();
         actions.resetForm();
+        navigate("/");
       } catch (error) {
         MySwal.fire({
           icon: "error",

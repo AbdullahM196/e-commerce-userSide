@@ -1,7 +1,8 @@
 #productDetails {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   margin-top: 30px;
   .productInfo {
     display: grid;
@@ -12,6 +13,8 @@
       display: flex;
       justify-content: center;
       img {
+        max-width: 100%;
+        object-fit: contain;
         height: calc(50vh - 80px);
       }
     }

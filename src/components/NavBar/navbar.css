@@ -16,7 +16,6 @@
   display: flex;
   text-align: center;
   align-items: center;
-  margin-right: 10px;
 }
 .logo svg {
   width: 34px;
@@ -158,12 +157,29 @@ ul > li {
     position: relative;
     top: 0;
     left: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+  }
+  .logo {
+    margin: 0;
+  }
+  .nav {
+    width: 100% !important;
   }
   .nav > ul {
     grid-template-columns: 1fr 24px;
     svg {
       width: 20px;
       height: 20px;
+    }
+  }
+  .searchBar {
+    button {
+      width: 25%;
+    }
+    input {
+      width: 75%;
     }
   }
   .menu {

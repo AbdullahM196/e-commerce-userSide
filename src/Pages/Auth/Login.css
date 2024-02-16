@@ -3,10 +3,11 @@
   justify-content: "center";
   align-items: "center";
   padding-bottom: 50px;
-  width: "100%";
+  width: 100%;
 
   background-color: "#f0f0f0";
   .form_container {
+    max-width: 100%;
     width: fit-content;
     height: fit-content;
     display: flex;
