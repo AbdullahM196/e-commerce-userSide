@@ -67,7 +67,7 @@ export default function NavBar() {
                 }}
               >
                 <small>Hi,</small>
-                <span>{data.userName.substring(0, 12)}</span>
+                <span>{data.userName?.substring(0, 12)}</span>
               </li>
             ) : (
               <li

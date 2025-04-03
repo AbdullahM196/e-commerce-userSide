@@ -50,8 +50,9 @@ export const authSlice = apiSlice.injectEndpoints({
     getUser: builder.query({
       query: () => "/user/profile",
       transformResponse: (res) => {
+        console.log({ res });
         store.dispatch(setAuthenticated(true));
-        return res;
+        return res.user;
       },
       providesTags: ["user"],
     }),

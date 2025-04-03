@@ -11,7 +11,7 @@
   & ul {
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 90px) 120px 150px;
+    grid-template-columns: repeat(4, auto);
     cursor: pointer;
     align-items: center;
     list-style-type: none;
